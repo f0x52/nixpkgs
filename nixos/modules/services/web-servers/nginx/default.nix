@@ -390,6 +390,8 @@ let
 
           ${mkBasicAuth vhostName vhost}
 
+          ${vhost.extraPreLocationConfig}
+
           ${mkLocations vhost.locations}
 
           ${vhost.extraConfig}

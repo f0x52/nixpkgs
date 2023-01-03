@@ -237,6 +237,14 @@ with lib;
       '';
     };
 
+    extraPreLocationConfig = mkOption {
+      type = types.lines;
+      default = "";
+      description = lib.mdDoc ''
+        These lines go before the vhost location blocks verbatim.
+      '';
+    };
+
     extraConfig = mkOption {
       type = types.lines;
       default = "";
